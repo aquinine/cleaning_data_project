@@ -20,5 +20,8 @@ Here is a basic breakdown of the run_analysis.R processing:
 
 The script takes no input data.  It is assumed to run in a base folder to the data.  The data is expected to be unzipped and unaltered into a folder titled "UCI HAR Dataset" with all of the test and train folders inside it.  The only output from the script is the tidy_data data frame created in the final step of processing.
 
+#Codebook for tidy_data
+Can be found in the repository.  It is named "CODEBOOK.md"
+
 # References
 [1]  Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
