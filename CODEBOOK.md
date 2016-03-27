@@ -39,21 +39,163 @@ Basics of the tidy_data.txt file:
  - The data set has 68 variables and 180 observations.
  - The data include the average of 66 of the variables from the original data set that were grouped by the remaining two variables (subject, activity)
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+###subject
+The subject number for the person in the study.  
+*  Class: integer
+*  Levels: 1-30
+*  Unit of measure: none
+*  Schema: none
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+###activity
+The activy value in the study.  
+*  Class: factor
+*  Levels: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+*  Unit of measure: none
+*  Schema: none
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+###time_domain.Body_Accelerated.-mean()-XYZ
+The mean of the mean of the time domain measurement of the acceleration from the body in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+###time_domain.Body_Accelerated.-std()-XYZ
+The mean of the standard deviation of the time domain measurement of the acceleration from the body in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
 
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
+###time_domain.Gravity_Accelerated.-mean()-XYZ
+The mean of the mean of the time domain measurement of the acceleration from gravity in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Gravity_Accelerated.-std()-XYZ
+The mean of the standard deviation of the time domain measurement of the acceleration from gravity in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Acclerometer_Jerk_Signal.-mean()-XYZ
+The mean of the mean of the time domain measurement of the Jerk signal that comes from the body-activated accelerometer motion in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Acclerometer_Jerk_Signal.-std()-XYZ
+The mean of the standard deviation of the time domain measurement of the Jerk signal that comes from the body-activated accelerometer motion in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Accelerated_Gyroscope.-mean()-XYZ
+The mean of the mean of the time domain measurement of the body-activated gyroscope motion in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Accelerated_Gyroscope.-std()-XYZ
+The mean of the standard deviation of the time domain measurement of the body-activated gyroscope motion in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Gyroscope_Jerk_Signal.-mean()-XYZ
+The mean of the mean of the time domain measurement of the Jerk signal that comes from the body-activated gyroscope motion in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.Body_Gyroscope_Jerk_Signal.-std()-XYZ
+The mean of the standard deviation of the time domain measurement of the Jerk signal that comes from the body-activated gyroscope motion in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###time_domain.BodyAc.Magnitude.-mean()
+The mean of the mean of the time domain measurement of the magnitude of the body acceleration.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.BodyAc.Magnitude.-std()
+The mean of the standard deviation of the time domain measurement of the magnitude of the body acceleration.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.GravityAc.Magnitude.-mean()
+The mean of the mean of the time domain measurement of the magnitude of the gravity acceleration.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.GravityAc.Magnitude.-std()
+The mean of the standard deviation of the time domain measurement of the magnitude of the gravity acceleration.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Body_Acclerometer_Jerk_Signal.Magnitude.-mean()
+The mean of the mean of the time domain measurement of the magnitude of the Jerk signal that comes from the body-activated accelerometer motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Body_Acclerometer_Jerk_Signal.Magnitude.-std()
+The mean of the standard deviation of the time domain measurement of the magnitude of the Jerk signal that comes from the body-activated accelerometer motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Magnitude_of_Body_Accelerated_Gyroscope.-mean()
+The mean of the mean of the time domain measurement of the magnitude of the body-accelerated gyroscope.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Magnitude_of_Body_Accelerated_Gyroscope.-std()
+The mean of the standard deviation of the time domain measurement of the magnitude of the body-accelerated gyroscope.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Body_Gyroscope_Jerk_Signal.Magnitude.-mean()
+The mean of the mean of the time domain measurement of the magnitude of the Jerk signal that comes from the body-activated gyroscope motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###time_domain.Body_Gyroscope_Jerk_Signal.Magnitude.-std()
+The mean of the standard deviation of the time domain measurement of the magnitude of the Jerk signal that comes from the body-activated gyroscope motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+
+
+"frequency_domain.Body_Accelerated.-mean()-X","frequency_domain.Body_Accelerated.-mean()-Y","frequency_domain.Body_Accelerated.-mean()-Z","frequency_domain.Body_Accelerated.-std()-X","frequency_domain.Body_Accelerated.-std()-Y","frequency_domain.Body_Accelerated.-std()-Z","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-X","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-Y","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-Z","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-X","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-Y","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-Z","frequency_domain.Body_Accelerated_Gyroscope.-mean()-X","frequency_domain.Body_Accelerated_Gyroscope.-mean()-Y","frequency_domain.Body_Accelerated_Gyroscope.-mean()-Z","frequency_domain.Body_Accelerated_Gyroscope.-std()-X","frequency_domain.Body_Accelerated_Gyroscope.-std()-Y","frequency_domain.Body_Accelerated_Gyroscope.-std()-Z","frequency_domain.BodyAc.Magnitude.-mean()","frequency_domain.BodyAc.Magnitude.-std()","frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-mean()","frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-std()","frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-mean()","frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-std()","frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-mean()","frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-std()"
 
 ##Sources
 Sources you used if any, otherise leave out.
