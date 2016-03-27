@@ -5,12 +5,12 @@ run_analysis <- function() {
         
         #read the test data
         #the function labels the column names while creating the data set
-        #so that step 4 is handled during this part of the process as well
+        #so that the columns are not left as V1-VN until step 4.
         test_data <- read_test_data()
         
         #read the std train data
         #the function labels the column names while creating the data set
-        #so that step 4 is handled during this part of the process as well
+        #so that the columns are not left as V1-VN until step 4.
         train_data <- read_train_data()
         
         #merge the test and train data using the rbind command
@@ -32,6 +32,9 @@ run_analysis <- function() {
         
         #create the small, tidy data set for step 5
         tidy_data <- aggregate(. ~ subject + activity, data = all_data, mean)
+        
+        write.table(tidy_data, "tidy_data.txt", sep = ",", 
+                    row.names = TRUE, col.names=TRUE)
         
         tidy_data
         
