@@ -1,36 +1,43 @@
 ---
-title: "Codebook template"
-author: "Your name here"
-date: "The date here"
+title: "Codebook for tidy_data"
+author: "Heather Quinn"
+date: "3/27/2016"
 output:
   html_document:
     keep_md: yes
 ---
 
 ## Project Description
-Short description of the project
-
-##Study design and data processing
-
-###Collection of the raw data
-Description of how the data was collected.
+The project for this class involved getting and cleaning data.  The information for getting the data and running the script can be found in the README.md.  For more information about the raw data, information can be found in the readme and features_info files in the data set.
 
 ###Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+The original data set is a combination of files, including 
+* UCI HAR Dataset/activity_labels.txt
+* UCI HAR Dataset/features.txt
+* UCI HAR Dataset/test/X_test.txt
+* UCI HAR Dataset/test/y_test.txt
+* UCI HAR Dataset/test/subject_test.txt
+* UCI HAR Dataset/train/X_train.txt
+* UCI HAR Dataset/train/y_train.txt
+* UCI HAR Dataset/train/subject_train.txt
 
 ##Creating the tidy datafile
+The run_analysis.R script will combine these files and transform them into the tidy_data data frame, which has the mean of all of the variables as based on subject and activity.
 
 ###Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
+1.  Download run_analysis.R
+2.  Download [the data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+3.  Unzip the data into the same folder as run_analysis.R
+4.  Source run_analysis.R in R.
+5.  Create the tidy_data data set using this command: tidy_data <- run_analysis()
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+The test and training data are merged to combine the data.  The unneeded columns are removed.  The actvity labels are added to the columns.  The variables names are transformed into human readable values.  The tidy data set is the mean of all of the variables as grouped by subject and activity. [More information is in the README.md](https://github.com/aquinine/cleaning_data_project/blob/master/README.md)
 
 ##Description of the variables in the tiny_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
+Basics of the tidy_data.txt file:
+ - The data set has 68 variables and 180 observations.
+ - The data include the average of 66 of the variables from the original data set that were grouped by the remaining two variables (subject, activity)
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
