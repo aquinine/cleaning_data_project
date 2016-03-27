@@ -38,6 +38,7 @@ The test and training data are merged to combine the data.  The unneeded columns
 Basics of the tidy_data.txt file:
  - The data set has 68 variables and 180 observations.
  - The data include the average of 66 of the variables from the original data set that were grouped by the remaining two variables (subject, activity)
+ - NOTE: Many of the variable names have unique values for the (X, Y, Z) directions.  The variable names are grouped for those variables with the suffix "-XYZ".  For the variable names with those suffixes, there are three variables of that name: one with the suffix of "-X", one with the suffix of "-Y" and one with the suffix of "-Z".  
 
 ###subject
 The subject number for the person in the study.  
@@ -193,12 +194,105 @@ The mean of the standard deviation of the time domain measurement of the magnitu
 *  Unit of measure: none
 *  Schema: none
 
+###frequency_domain.Body_Accelerated.-mean()-XYZ
+The mean of the mean of the frequency domain measurement of the acceleration from the body in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
 
+###frequency_domain.Body_Accelerated.-std()-XYZ
+The mean of the standard deviation of the frequency domain measurement of the acceleration from the body in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
 
-"frequency_domain.Body_Accelerated.-mean()-X","frequency_domain.Body_Accelerated.-mean()-Y","frequency_domain.Body_Accelerated.-mean()-Z","frequency_domain.Body_Accelerated.-std()-X","frequency_domain.Body_Accelerated.-std()-Y","frequency_domain.Body_Accelerated.-std()-Z","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-X","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-Y","frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-Z","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-X","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-Y","frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-Z","frequency_domain.Body_Accelerated_Gyroscope.-mean()-X","frequency_domain.Body_Accelerated_Gyroscope.-mean()-Y","frequency_domain.Body_Accelerated_Gyroscope.-mean()-Z","frequency_domain.Body_Accelerated_Gyroscope.-std()-X","frequency_domain.Body_Accelerated_Gyroscope.-std()-Y","frequency_domain.Body_Accelerated_Gyroscope.-std()-Z","frequency_domain.BodyAc.Magnitude.-mean()","frequency_domain.BodyAc.Magnitude.-std()","frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-mean()","frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-std()","frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-mean()","frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-std()","frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-mean()","frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-std()"
+###frequency_domain.Body_Acclerometer_Jerk_Signal.-mean()-XYZ
+The mean of the mean of the frequency domain measurement of the Jerk signal that comes from the body-activated accelerometer motion in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###frequency_domain.Body_Acclerometer_Jerk_Signal.-std()-XYZ
+The mean of the standard deviation of the frequency domain measurement of the Jerk signal that comes from the body-activated accelerometer motion in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###frequency_domain.Body_Accelerated_Gyroscope.-mean()-XYZ
+The mean of the mean of the frequency domain measurement of the body-activated gyroscope motion in the (X, Y, and Z) directions.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###frequency_domain.Body_Accelerated_Gyroscope.-std()-XYZ
+The mean of the standard deviation of the frequency domain measurement of the body-activated gyroscope motion in the (X, Y, and Z) directions.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: This is three separate variables corresponding to the X, Y, and Z directions.
+
+###frequency_domain.BodyAc.Magnitude.-mean()
+The mean of the mean of the frequency domain measurement of the magnitude of the body acceleration.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.BodyAc.Magnitude.-std()
+The mean of the standard deviation of the frequency domain measurement of the magnitude of the body acceleration.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-mean()
+The mean of the mean of the frequency domain measurement of the magnitude of the Jerk signal of the body-accelerated accelerometer motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Body_Acclerometer_Jerk_Signal.Magnitude.-std()
+The mean of the standard deviation of the frequency domain measurement of the magnitude of the Jerk signal of the body-accelerated accelerometer motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-mean()
+The mean of the mean of the frequency domain measurement of the magnitude of the body-accelerated gyroscope motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Magnitude_of_Body_Accelerated_Gyroscope.-std()
+The mean of the standard deviation of the frequency domain measurement of the magnitude of the body-accelerated gyroscope motion.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-mean()
+The mean of the mean of the frequency domain measurement of the magnitude of the Jerk signal for body-acclerated gyroscope motion.  
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
+
+###frequency_domain.Body_Accelerated.Body_Gyroscope_Jerk_Signal.Magnitude.-std()
+The mean of the standard deviation of the frequency domain measurement of the magnitude of the Jerk signal for body-acclerated gyroscope motion.
+*  Class: numeric
+*  Levels: none
+*  Unit of measure: none
+*  Schema: none
 
 ##Sources
-Sources you used if any, otherise leave out.
+The source of the data is [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  Information about the study can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and in this paper:
 
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
